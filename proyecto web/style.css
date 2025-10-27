@@ -1,0 +1,278 @@
+/* ======================= */
+/* PALETA Y ESTILOS GENERALES */
+/* ======================= */
+:root {
+    --color-blanco: #ffffff;
+    --color-fondo: #f4f6f8;
+    --color-texto: #333333;
+    --color-azul-principal: #0d5a9b;
+    --color-gris-bordes: #e0e0e0;
+    --font-principal: 'Inter', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-principal); background-color: var(--color-fondo); color: var(--color-texto); line-height: 1.7; transition: background-color 0.3s, color 0.3s; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* ======================= */
+/* HEADER Y NAVEGACIÓN     */
+/* ======================= */
+.main-header { background-color: var(--color-blanco); padding: 15px 0; border-bottom: 1px solid var(--color-gris-bordes); position: sticky; top: 0; z-index: 100; transition: background-color 0.3s, border-color 0.3s; }
+.main-header .container { 
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.header-logo-container { justify-self: start; }
+.main-nav { justify-self: center; }
+.header-toggle-container { justify-self: end; }
+.logo { display: block; }
+.logo img { height: 70px; width: auto; vertical-align: middle; }
+.main-nav ul { list-style: none; display: flex; gap: 30px; }
+.main-nav a { color: var(--color-texto); font-weight: 700; font-size: 1.1em; text-decoration: none; transition: color 0.3s ease; }
+.main-nav a:hover { color: var(--color-azul-principal); }
+
+
+/* ======================= */
+/* TÍTULO Y CONTENIDO      */
+/* ======================= */
+.hero-section { padding: 60px 0; text-align: center; background-color: var(--color-blanco); transition: background-color 0.3s; }
+.hero-section h1 { font-size: 2.8em; font-weight: 900; }
+.content-area { padding-top: 40px; padding-bottom: 40px; }
+.content-section { margin-bottom: 60px; padding-top: 20px; }
+.content-section h2 { font-size: 1.8em; font-weight: 900; margin-bottom: 25px; color: var(--color-azul-principal); }
+.layout-wrapper { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+.featured-article h3 { font-size: 1.8em; font-weight: 900; color: var(--color-texto); margin: 0; }
+.featured-article .article-meta { font-size: 0.9em; color: #777; margin-bottom: 15px; }
+.featured-article p { font-size: 1.1em; line-height: 1.8; }
+.featured-article .read-more { display: inline-block; margin-top: 15px; font-weight: 700; color: var(--color-azul-principal); text-decoration: underline; }
+.list-item { border-bottom: 1px solid var(--color-gris-bordes); padding: 15px 0; transition: border-color 0.3s; }
+.list-item:last-child { border-bottom: none; }
+.list-item p { font-size: 1.2em; font-weight: 700; margin: 0; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 12px 10px; border-bottom: 1px solid var(--color-gris-bordes); transition: border-color 0.3s; }
+thead { background-color: #f0f0f0; transition: background-color 0.3s; }
+th { font-weight: 700; }
+.history-content h3 { font-size: 1.4em; font-weight: 900; color: var(--color-texto); border-bottom: 2px solid var(--color-azul-principal); padding-bottom: 10px; margin-top: 30px; margin-bottom: 15px; }
+.president-list { list-style: none; padding-left: 0; }
+.president-list li { padding: 8px 0; border-bottom: 1px dashed var(--color-gris-bordes); }
+.president-list li span { font-weight: 700; color: var(--color-azul-principal); margin-right: 10px; }
+
+/* ======================================= */
+/* TARJETAS DE PARTIDO */
+/* ======================================= */
+.matches-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; }
+.match-card { background-color: var(--color-blanco); border: 1px solid var(--color-gris-bordes); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: all 0.3s ease; }
+.match-card:hover { transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+.match-card-league { background-color: #e9ecef; color: #495057; padding: 8px 15px; font-size: 0.8em; font-weight: 700; text-align: center; }
+.match-card-body { display: flex; justify-content: space-between; align-items: center; padding: 20px 15px; flex-grow: 1; }
+.match-card .team { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100px; text-align: center; }
+.match-card .team img { width: 50px; height: 50px; object-fit: contain; }
+.match-card .team span { font-weight: 700; font-size: 1em; color: var(--color-texto); }
+.match-card .match-center-info { text-align: center; }
+.match-card .match-score { font-size: 2.2em; font-weight: 900; color: var(--color-texto); }
+.match-card .match-time { font-size: 1.2em; font-weight: 700; color: var(--color-texto); }
+.match-card .match-date { font-size: 0.9em; color: #6c757d; font-weight: 700; }
+.match-card-scorers { display: flex; justify-content: space-between; padding: 10px 15px; border-top: 1px solid var(--color-gris-bordes); font-size: 0.8em; color: #6c757d; }
+.scorers-list { display: flex; flex-direction: column; gap: 5px; }
+.scorers-list.away-scorers { align-items: flex-end; }
+.scorers-list span { display: flex; align-items: center; gap: 5px; }
+.scorers-list i { font-size: 0.9em; }
+.match-card-cta { background-color: var(--color-fondo); border-top: 1px solid var(--color-gris-bordes); padding: 12px 15px; text-align: center; font-weight: 700; color: var(--color-azul-principal); text-decoration: none; transition: background-color 0.3s; }
+.match-card-cta:hover { background-color: var(--color-azul-principal); color: var(--color-blanco); }
+
+/* ======================================= */
+/* TABLA DE GOLEADORES */
+/* ======================================= */
+.scorers-table { background-color: var(--color-blanco); border-radius: 8px; overflow: hidden; border: 1px solid var(--color-gris-bordes); transition: background-color 0.3s, border-color 0.3s; }
+.scorer-row { display: grid; grid-template-columns: 50px 2fr 1.5fr 1fr; align-items: center; padding: 12px 15px; border-bottom: 1px solid var(--color-gris-bordes); transition: background-color 0.2s, border-color 0.3s; }
+.scorer-row:last-child { border-bottom: none; }
+.scorer-row:not(.header):hover { background-color: var(--color-fondo); }
+.scorer-row.header { font-weight: 700; color: #888; background-color: var(--color-fondo); font-size: 0.9em; text-transform: uppercase; }
+.scorer-rank { font-weight: 700; font-size: 1.1em; }
+.scorer-player, .scorer-team { display: flex; align-items: center; gap: 15px; font-weight: 700; }
+.scorer-player img, .scorer-team img { width: 30px; height: 30px; object-fit: contain; border-radius: 50%; }
+.scorer-goals { text-align: center; font-weight: 900; font-size: 1.2em; color: var(--color-azul-principal); }
+
+/* ======================= */
+/* CARRUSEL DE CLUBES      */
+/* ======================= */
+.carousel-container { position: relative; width: 100%; padding: 0 50px; box-sizing: border-box; }
+.carousel-window { width: 100%; overflow: hidden; }
+.carousel-track { display: flex; transition: transform 0.5s ease-in-out; }
+.carousel-slide { flex: 0 0 auto; width: calc(100% / 6); padding: 10px; box-sizing: border-box; }
+.carousel-slide img { width: 100%; height: auto; border-radius: 50%; background-color: #fff; padding: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: background-color 0.3s; }
+.carousel-button { position: absolute; top: 50%; transform: translateY(-50%); background-color: var(--color-blanco); border: 1px solid var(--color-gris-bordes); border-radius: 50%; width: 40px; height: 40px; font-size: 1em; cursor: pointer; z-index: 10; color: var(--color-texto); display: flex; justify-content: center; align-items: center; transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+.carousel-button:hover { background-color: var(--color-azul-principal); color: var(--color-blanco); }
+.carousel-button.prev { left: 0; }
+.carousel-button.next { right: 0; }
+
+#publicidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  height: 20vh;          
+}
+/* (Aquí va todo tu código CSS anterior) */
+
+/* ... */
+
+/* --- ESTILOS PARA LA TABLA DE POSICIONES --- */
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 12px 10px; border-bottom: 1px solid var(--color-gris-bordes); transition: border-color 0.3s; vertical-align: middle; }
+thead { background-color: #f0f0f0; transition: background-color 0.3s; }
+th { font-weight: 700; }
+
+/* ===== NUEVOS ESTILOS PARA LOS LOGOS EN LA TABLA ===== */
+.team-cell {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+}
+
+.team-cell img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* Clases para ajustar el ancho de las columnas (opcional pero recomendado) */
+.rank-col { width: 5%; }
+.club-col { width: 65%; }
+.pts-col { width: 15%; text-align: center; }
+.pj-col { width: 15%; text-align: center; }
+tbody .pts-col, tbody .pj-col { text-align: center; font-weight: 700; }
+/* ===================================================== */
+
+/* (El resto del código CSS sigue igual) */
+/* ... */
+/* ======================= */
+/* VENTANA MODAL           */
+/* ======================= */
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); display: none; justify-content: center; align-items: center; z-index: 200; }
+.modal-overlay.active { display: flex; }
+.modal-content { background-color: var(--color-blanco); padding: 40px; border-radius: 10px; width: 90%; max-width: 800px; max-height: 85vh; overflow-y: auto; position: relative; transition: background-color 0.3s, color 0.3s; }
+.modal-content h2 { color: var(--color-azul-principal); margin-top: 0; margin-bottom: 25px; font-size: 1.8em; }
+.close-button { position: absolute; top: 15px; right: 20px; background: none; border: none; font-size: 2.5em; color: #aaa; cursor: pointer; line-height: 1; }
+.close-button:hover { color: var(--color-texto); }
+.match-modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-gris-bordes); padding-bottom: 20px; margin-bottom: 20px; }
+.match-modal-header .team { width: 120px; text-align: center; }
+.match-modal-header .team img { width: 70px; height: 70px; object-fit: contain; margin-bottom: 10px; }
+.match-modal-header .team span { font-weight: 700; }
+.match-modal-header .match-score { font-size: 3em; font-weight: 900; }
+.match-modal-header .match-league { font-size: 0.9em; font-weight: 700; color: #888; }
+.match-modal-body h4 { text-align: center; margin-bottom: 25px; font-size: 1.2em; }
+.stat-row { display: grid; grid-template-columns: 50px 1fr 50px; align-items: center; text-align: center; gap: 15px; margin-bottom: 15px; }
+.stat-value-home, .stat-value-away { font-weight: 700; }
+.stat-bar { grid-column: 1 / -1; background-color: #e9ecef; height: 8px; border-radius: 4px; overflow: hidden; }
+.stat-bar-inner { background-color: var(--color-azul-principal); height: 100%; width: 50%; border-radius: 4px; transition: width 0.5s ease-in-out; }
+
+/* ======================= */
+/* DARK MODE Y BOTÓN NUEVO   */
+/* ======================= */
+body.dark-mode { --color-blanco: #1e1e1e; --color-fondo: #121212; --color-texto: #e0e0e0; --color-azul-principal: #58abf8; --color-gris-bordes: #3a3a3a; }
+.dark-mode-button { background-color: #e0e0e0; border: none; width: 60px; height: 30px; border-radius: 30px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: 5px; position: relative; }
+.dark-mode-button .sun, .dark-mode-button .moon { font-size: 1.1em; transition: opacity 0.3s ease, transform 0.3s ease; }
+.dark-mode-button .moon { color: #0d5a9b; }
+.dark-mode-button .sun { opacity: 0; color: #f39c12; transform: scale(0); }
+.dark-mode-button::before { content: ''; position: absolute; width: 22px; height: 22px; border-radius: 50%; background-color: white; top: 4px; left: 4px; transition: transform 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+body.dark-mode .dark-mode-button { background-color: #333; }
+body.dark-mode .dark-mode-button::before { transform: translateX(30px); }
+body.dark-mode .dark-mode-button .moon { opacity: 0; transform: scale(0); }
+body.dark-mode .dark-mode-button .sun { opacity: 1; transform: scale(1); }
+body.dark-mode thead { background-color: #2c2c2c; }
+body.dark-mode .carousel-slide img { background-color: #333; }
+body.dark-mode .modal-content { color: var(--color-texto); }
+body.dark-mode .modal-content h3 { color: var(--color-texto); }
+body.dark-mode .featured-article .article-meta, body.dark-mode .list-item small { color: #999; }
+body.dark-mode .match-card { box-shadow: none; }
+body.dark-mode .match-card:hover { box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+body.dark-mode .match-card-league { background-color: #3a3a3c; color: #adb5bd; }
+body.dark-mode .match-card .match-date { color: #8d9093; }
+body.dark-mode .match-card-scorers { color: #999; }
+body.dark-mode .scorer-row.header { color: #999; }
+body.dark-mode .scorer-row:not(.header):hover { background-color: #2c2c2e; }
+body.dark-mode .match-modal-header .match-league { color: #999; }
+body.dark-mode .stat-bar { background-color: #3a3a3c; }
+
+/* ======================= */
+/* FOOTER                  */
+/* ======================= */
+.main-footer { padding: 40px 0; text-align: center; border-top: 1px solid var(--color-gris-bordes); background-color: var(--color-blanco); color: #888; transition: background-color 0.3s, border-color 0.3s; }
+.footer-social-icons { display: flex; justify-content: center; gap: 25px; margin-bottom: 20px; }
+.footer-social-icons a { color: var(--color-texto); font-size: 1.5em; text-decoration: none; transition: color 0.3s ease, transform 0.3s ease; }
+.footer-social-icons a:hover { color: var(--color-azul-principal); transform: translateY(-3px); }
+body.dark-mode .footer-social-icons a { color: #999; }
+
+
+/* ======================= */
+/* PALETA Y ESTILOS GENERALES */
+/* ======================= */
+:root {
+    --color-blanco: #ffffff;
+    --color-fondo: #f4f6f8;
+    --color-texto: #333333;
+    --color-azul-principal: #0d5a9b;
+    --color-gris-bordes: #e0e0e0;
+    --font-principal: 'Inter', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-principal); background-color: var(--color-fondo); color: var(--color-texto); line-height: 1.7; transition: background-color 0.3s, color 0.3s; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* (El resto de tu código CSS no cambia hasta el final) */
+/* ... */
+/* ... */
+
+/* ======================= */
+/* FOOTER                  */
+/* ======================= */
+.main-footer { padding: 40px 0; text-align: center; border-top: 1px solid var(--color-gris-bordes); background-color: var(--color-blanco); color: #888; transition: background-color 0.3s, border-color 0.3s; }
+.footer-social-icons { display: flex; justify-content: center; gap: 25px; margin-bottom: 20px; }
+.footer-social-icons a { color: var(--color-texto); font-size: 1.5em; text-decoration: none; transition: color 0.3s ease, transform 0.3s ease; }
+.footer-social-icons a:hover { color: var(--color-azul-principal); transform: translateY(-3px); }
+body.dark-mode .footer-social-icons a { color: #999; }
+
+/* ======================================= */
+/* ===== NUEVO: ESTILOS DE PUBLICIDAD ===== */
+/* ======================================= */
+.ad-placeholder {
+    margin: 40px auto;
+    text-align: center;
+}
+.ad-label {
+    font-size: 0.7em;
+    color: #b0b0b0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body.dark-mode .ad-label {
+    color: #666;
+}
+.ad-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--color-gris-bordes);
+}
+
+/* ======================= */
+/* RESPONSIVE DESIGN       */
+/* ======================= */
+@media (max-width: 1100px) { .container { max-width: 90%; } }
+@media (max-width: 900px) { .layout-wrapper { grid-template-columns: 1fr; } .carousel-slide { width: calc(100% / 4); } }
+@media (max-width: 768px) { .hero-section h1 { font-size: 2em; } .main-header .container { display: flex; flex-direction: column; gap: 20px; } }
+@media (max-width: 600px) { .carousel-slide { width: calc(100% / 3); } .carousel-container { padding: 0 40px; } }
+
+/* ======================= */
+/* RESPONSIVE DESIGN       */
+/* ======================= */
+@media (max-width: 1100px) { .container { max-width: 90%; } }
+@media (max-width: 900px) { .layout-wrapper { grid-template-columns: 1fr; } .carousel-slide { width: calc(100% / 4); } }
+@media (max-width: 768px) { .hero-section h1 { font-size: 2em; } .main-header .container { display: flex; flex-direction: column; gap: 20px; } }
+@media (max-width: 600px) { .carousel-slide { width: calc(100% / 3); } .carousel-container { padding: 0 40px; } }

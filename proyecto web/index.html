@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Rosarina de Fútbol - Final</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-logo-container">
+                <a href="#" class="logo">
+                    <img src="img/25_logo.png" alt="Asociación Rosarina de Fútbol Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#partidos">Partidos</a></li>
+                    <li><a href="#clubes">Clubes</a></li>
+                    <li><a href="#" data-modal-target="#modal-historia">Historia</a></li>
+                    <li><a href="#" data-modal-target="#modal-institucion">Institución</a></li>
+                    <li> <a href="#competencias">Tabla</a></li>
+                    <li><a href="#goleadores"> Apariciones</a></li>
+                </ul>
+            </nav>
+            <div class="header-toggle-container">
+                <button id="dark-mode-toggle" class="dark-mode-button" title="Cambiar tema">
+                    <span class="sun"><i class="fas fa-sun"></i></span>
+                    <span class="moon"><i class="fas fa-moon"></i></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="container">
+                <h1>El Corazón del Fútbol Rosarino</h1>
+            </div>
+        </section>
+
+        <div class="container content-area">
+            <div class="layout-wrapper">
+                <div class="main-column">
+                    <section id="noticias" class="content-section">
+                        <h2>Último Momento</h2>
+                        <article class="featured-article">
+                            <img src="img/seno.png" alt="Foto de la Selección Femenina de Futsal"
+                                style="width:100%; height:auto; border-radius: 8px; margin-bottom: 15px;">
+                            <h3>La Selección Femenina de futsal ya tiene cuerpo técnico</h3>
+                            <p class="article-meta">Publicado el 20/10/2025 | Futsal Femenino</p>
+                            <p>Leandro Maurino, entrenador del club Horizonte, estará al frente del grupo de trabajo que
+                                comandará al elenco de la Asociación Rosarina.</p>
+                            <a href="#" class="read-more">Leer más...</a>
+                        </article>
+                    </section>
+                </div>
+                <aside class="sidebar-column">
+                    <section class="content-section">
+                        <h2>Noticias Breves</h2>
+                        <div class="list-item">
+                            <p>Tribunal Disciplinario: Boletín 3276</p>
+                        </div>
+                        <div class="list-item">
+                            <p>Tribunal Disciplinario: Boletín 3275</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                            <a href="https://www.betano.bet.ar/" target ="_blank"><img src="img/publi2.png" alt="publicidad"></a>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+            
+
+            <section id="partidos" class="content-section">
+                <h2>Próximos Partidos</h2>
+                <div class="matches-container">
+                    <div class="match-card">
+                        <div class="match-card-league">Torneo Gobernador Molinas</div>
+                        <div class="match-card-body">
+                            <div class="team team-home"><img src="img/newells.png"
+                                    alt="Escudo Newell's Old Boys"><span>Newell's</span></div>
+                            <div class="match-center-info">
+                                <p class="match-time">SÁB 15:30</p>
+                                <p class="match-date">25 OCT</p>
+                            </div>
+                            <div class="team team-away"><img src="img/Central Córdoba Rosario Escudo.png"
+                                    alt="Escudo Central Córdoba"><span>Central Cba.</span></div>
+                        </div>
+                        <a href="#" class="match-card-cta" data-modal-target="#modal-partido">VER DETALLES</a>
+                    </div>
+                    <div class="match-card">
+                        <div class="match-card-league">Copa Pinasco</div>
+                        <div class="match-card-body">
+                            <div class="team team-home"><img src="img/tirosuizo.png" alt="Escudo Tiro Suizo"><span>Tiro
+                                    Suizo</span></div>
+                            <div class="match-center-info">
+                                <p class="match-time">DOM 11:00</p>
+                                <p class="match-date">26 OCT</p>
+                            </div>
+                            <div class="team team-away"><img src="img/pablo.png" alt="Escudo Pablo VI"><span>Pablo
+                                    VI</span></div>
+                        </div>
+                        <a href="#" class="match-card-cta" data-modal-target="#modal-partido">VER DETALLES</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resultados" class="content-section">
+                <h2>Resultados Recientes</h2>
+                <div class="matches-container">
+                    <div class="match-card">
+                        <div class="match-card-league">Torneo Gobernador Molinas</div>
+                        <div class="match-card-body">
+                            <div class="team team-home"><img src="img/rosario_central.png"
+                                    alt="Escudo Rosario Central"><span>R. Central</span></div>
+                            <div class="match-center-info">
+                                <p class="match-score">3 - 1</p>
+                            </div>
+                            <div class="team team-away"><img src="img/aguirre.png" alt="Escudo Coronel Aguirre"><span>C.
+                                    Aguirre</span></div>
+                        </div>
+                        <div class="match-card-scorers">
+                            <div class="scorers-list home-scorers">
+                                <span>M. Ruben 11' <i class="fas fa-futbol"></i></span>
+                                <span>A. Veliz 45' <i class="fas fa-futbol"></i></span>
+                                <span>L. Ferreyra 82' <i class="fas fa-futbol"></i></span>
+                            </div>
+                            <div class="scorers-list away-scorers">
+                                <span>N. Muzzio 65' <i class="fas fa-futbol"></i></span>
+                            </div>
+                        </div>
+                        <a href="#" class="match-card-cta" data-modal-target="#modal-partido"
+                            data-league="Torneo Gobernador Molinas" data-home-team="R. Central"
+                            data-home-logo="img/rosario_central.png" data-home-score="3" data-away-team="C. Aguirre"
+                            data-away-logo="img/aguirre.png" data-away-score="1"
+                            data-stats='{"possession": "62", "shots": "14", "on_target": "7", "fouls": "11", "yellow": "2", "red": "0", "corners": "8"}'>VER
+                            PARTIDO</a>
+                    </div>
+                    <div class="match-card">
+                        <div class="match-card-league">Torneo Gobernador Molinas</div>
+                        <div class="match-card-body">
+                            <div class="team team-home"><img src="img/Ca_provincial_ros_logo.png"
+                                    alt="Escudo Provincial"><span>Provincial</span></div>
+                            <div class="match-center-info">
+                                <p class="match-score">2 - 2</p>
+                            </div>
+                            <div class="team team-away"><img src="img/tiro_federal_rosario.png"
+                                    alt="Escudo Tiro Federal"><span>Tiro Federal</span></div>
+                        </div>
+                        <div class="match-card-scorers">
+                            <div class="scorers-list home-scorers">
+                                <span>L. Pérez 23' <i class="fas fa-futbol"></i></span>
+                                <span>V. Gómez 71' <i class="fas fa-futbol"></i></span>
+                            </div>
+                            <div class="scorers-list away-scorers">
+                                <span>C. Sosa 30' <i class="fas fa-futbol"></i></span>
+                                <span>A. Luna 88' <i class="fas fa-futbol"></i></span>
+                            </div>
+                        </div>
+                        <a href="#" class="match-card-cta" data-modal-target="#modal-partido"
+                            data-league="Fútbol Femenino" data-home-team="Provincial"
+                            data-home-logo="img/Ca_provincial_ros_logo.png" data-home-score="2"
+                            data-away-team="Tiro Federal" data-away-logo="img/tiro_federal_rosario.png"
+                            data-away-score="2"
+                            data-stats='{"possession": "45", "shots": "8", "on_target": "4", "fouls": "9", "yellow": "1", "red": "0", "corners": "3"}'>VER
+                            PARTIDO</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="goleadores" class="content-section">
+                <h2>Goleadores</h2>
+                <div class="scorers-table">
+                    <div class="scorer-row header">
+                        <div class="scorer-rank">#</div>
+                        <div class="scorer-player">Jugador</div>
+                        <div class="scorer-team">Equipo</div>
+                        <div class="scorer-goals">Goles</div>
+                    </div>
+                    <div class="scorer-row">
+                        <div class="scorer-rank">1</div>
+                        <div class="scorer-player">
+                            <img src="img/fabbiani.png" alt="Foto Jugador">
+                            <span>C. Fabbiani</span>
+                        </div>
+                        <div class="scorer-team">
+                            <img src="img/newells.png" alt="Escudo Newell's Old Boys">
+                            <span>Newell's</span>
+                        </div>
+                        <div class="scorer-goals">12</div>
+                    </div>
+                    <div class="scorer-row">
+                        <div class="scorer-rank">2</div>
+                        <div class="scorer-player">
+                            <img src="img/dimaria.png" alt="Foto Jugador">
+                            <span>A. Di Maria</span>
+                        </div>
+                        <div class="scorer-team">
+                            <img src="img/rosario_central.png" alt="Escudo Rosario Central">
+                            <span>R. Central</span>
+                        </div>
+                        <div class="scorer-goals">10</div>
+                    </div>
+                    <div class="scorer-row">
+                        <div class="scorer-rank">3</div>
+                        <div class="scorer-player">
+                            <img src="img/ortigoza.png" alt="Foto Jugador">
+                            <span>N. Ortigoza</span>
+                        </div>
+                        <div class="scorer-team">
+                            <img src="img/aguirre.png" alt="Escudo Coronel Aguirre">
+                            <span>C. Aguirre</span>
+                        </div>
+                        <div class="scorer-goals">9</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="asistidores" class="content-section">
+                <h2>Asistidores</h2>
+                <div class="scorers-table">
+                    <div class="scorer-row header">
+                        <div class="scorer-rank">#</div>
+                        <div class="scorer-player">Jugador</div>
+                        <div class="scorer-team">Equipo</div>
+                        <div class="scorer-goals">Asist.</div>
+                    </div>
+                    <div class="scorer-row">
+                        <div class="scorer-rank">1</div>
+                        <div class="scorer-player">
+                            <img src="img/dimaria.png" alt="Foto Jugador">
+                            <span>A. Di Maria</span>
+                        </div>
+                        <div class="scorer-team">
+                            <img src="img/rosario_central.png" alt="Escudo Rosario Central">
+                            <span>R. Central</span>
+                        </div>
+                        <div class="scorer-goals">9</div>
+                    </div>
+                    <div class="scorer-row">
+                        <div class="scorer-rank">2</div>
+                        <div class="scorer-player">
+                            <img src="img/bou.png" alt="Foto Jugador">
+                            <span>G. Bou</span>
+                        </div>
+                        <div class="scorer-team">
+                            <img src="img/Central Córdoba Rosario Escudo.png" alt="Escudo Central Córdoba">
+                            <span>C. Cordoba</span>
+                        </div>
+                        <div class="scorer-goals">7</div>
+                    </div>
+                    <div class="scorer-row">
+                        <div class="scorer-rank">3</div>
+                        <div class="scorer-player">
+                            <img src="img/VELIZ_ALEJO_GRANDE.png" alt="Foto Jugador">
+                            <span>A. Veliz</span>
+                        </div>
+                        <div class="scorer-team">
+                            <img src="img/rosario_central.png" alt="Escudo Rosario Central">
+                            <span>R. Central</span>
+                        </div>
+                        <div class="scorer-goals">6</div>
+                    </div>
+                </div>
+            </section>
+            <section id ="publicidad" class="content-section">
+                <div>
+                    <a href="https://www.betano.bet.ar/" target ="_blank"><img src="img/publi.png" alt="publicidad"></a>
+                    
+                </div>
+            </section>
+            <section id="competencias" class="content-section">
+                <h2>Tabla de Posiciones</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="rank-col">#</th>
+                            <th class="club-col">Club</th>
+                            <th class="pts-col">Pts</th>
+                            <th class="pj-col">PJ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="team-cell"><img src="img/rosario_central.png"
+                                        alt="Escudo Rosario Central"><span>Rosario Central</span></div>
+                            </td>
+                            <td>32</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <div class="team-cell"><img src="img/newells.png"
+                                        alt="Escudo Newell's Old Boys"><span>Newell's Old Boys</span></div>
+                            </td>
+                            <td>30</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <div class="team-cell"><img src="img/aguirre.png"
+                                        alt="Escudo Coronel Aguirre"><span>Coronel Aguirre</span></div>
+                            </td>
+                            <td>28</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <div class="team-cell"><img src="img/Central Córdoba Rosario Escudo.png"
+                                        alt="Escudo Central Córdoba"><span>Central Córdoba</span></div>
+                            </td>
+                            <td>27</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <div class="team-cell"><img src="img/Ca_provincial_ros_logo.png"
+                                        alt="Escudo Provincial"><span>Provincial</span></div>
+                            </td>
+                            <td>25</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                <div class="team-cell"><img src="img/clubinfantil.png"
+                                        alt="Escudo ADIUR"><span>ADIUR</span></div>
+                            </td>
+                            <td>24</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                <div class="team-cell"><img src="img/alivfr.png"
+                                        alt="Escudo Alianza Sport"><span>Alianza Sport</span></div>
+                            </td>
+                            <td>22</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                <div class="team-cell"><img src="img/tiro_federal_rosario.png"
+                                        alt="Escudo Tiro Federal"><span>Tiro Federal</span></div>
+                            </td>
+                            <td>21</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>
+                                <div class="team-cell"><img src="img/dcrms.png" alt="Escudo Morning Star"><span>Morning
+                                        Star</span></div>
+                            </td>
+                            <td>20</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>
+                                <div class="team-cell"><img src="img/causy.png"
+                                        alt="Escudo Unión y Sociedad Italiana"><span>Unión y Soc. Italiana</span></div>
+                            </td>
+                            <td>19</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>
+                                <div class="team-cell"><img src="img/tirosuizo.png" alt="Escudo Tiro Suizo"><span>Tiro
+                                        Suizo</span></div>
+                            </td>
+                            <td>17</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>
+                                <div class="team-cell"><img src="img/pablo.png" alt="Escudo Pablo VI"><span>Pablo
+                                        VI</span></div>
+                            </td>
+                            <td>16</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>
+                                <div class="team-cell"><img src="img/ult.png"
+                                        alt="Escudo Oriental"><span>Oriental</span></div>
+                            </td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>
+                                <div class="team-cell"><img src="img/banco.jpeg"
+                                        alt="Escudo Club Banco Nación"><span>Club Banco Nación</span></div>
+                            </td>
+                            <td>12</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>
+                                <div class="team-cell"><img src="img/santelmo.png"
+                                        alt="Escudo San Telmo Funes"><span>San Telmo Funes</span></div>
+                            </td>
+                            <td>10</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>
+                                <div class="team-cell"><img src="img/galvez.png" alt="Escudo Club Gálvez"><span>Club
+                                        Gálvez</span></div>
+                            </td>
+                            <td>8</td>
+                            <td>15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="clubes" class="content-section">
+                <h2>Clubes Afiliados</h2>
+                <div class="carousel-container">
+                    <div class="carousel-window">
+                        <div class="carousel-track">
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-central"><img
+                                        src="img/rosario_central.png" alt="Rosario Central"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-newells"><img
+                                        src="img/newells.png" alt="Newell's Old Boys"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-central-cordoba"><img
+                                        src="img/Central Córdoba Rosario Escudo.png" alt="Central Córdoba"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-tiro-federal"><img
+                                        src="img/tiro_federal_rosario.png" alt="Tiro Federal"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-adiur"><img
+                                        src="img/clubinfantil.png" alt="ADIUR"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-morning"><img
+                                        src="img/dcrms.png" alt="Morning Star"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-tiro-suizo"><img
+                                        src="img/tirosuizo.png" alt="Tiro Suizo"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-aguirre"><img
+                                        src="img/aguirre.png" alt="Coronel Aguirre"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-banco"><img
+                                        src="img/banco.jpeg" alt="Club Banco Nación"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-galvez"><img
+                                        src="img/galvez.png" alt="Club Gálvez"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-pablo-vi"><img
+                                        src="img/pablo.png" alt="Pablo VI"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-provincial"><img
+                                        src="img/Ca_provincial_ros_logo.png" alt="Provincial"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-alianza"><img
+                                        src="img/alivfr.png" alt="Alianza Sport"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-san-telmo"><img
+                                        src="img/santelmo.png" alt="San Telmo Funes"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-union-alvarez"><img
+                                        src="img/causy.png" alt="Unión y Sociedad Italiana"></a></div>
+                            <div class="carousel-slide"><a href="#" data-modal-target="#modal-oriental"><img
+                                        src="img/ult.png" alt="Oriental"></a></div>
+                        </div>
+                    </div>
+                    <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-social-icons">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="X"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 Asociación Rosarina de Fútbol.</p>
+        </div>
+    </footer>
+
+    <div id="modal-historia" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2>Nuestra Historia</h2>
+            <div class="history-content">
+                <h3>Orígenes</h3>
+                <p>En 1905 se creó la Liga Rosarina de Football, primer organismo encargado de la organización del
+                    fútbol en nuestra ciudad...</p>
+                <h3>La Fundación</h3>
+                <p>Finalmente, en 1931, el fútbol argentino se profesionalizó y los clubes rosarinos se unieron en la
+                    flamante Asociación Rosarina de Fútbol...</p>
+                <h3>Listado Completo de Presidentes</h3>
+                <ul class="president-list">
+                    <li><span>1931-1933:</span> Ismael Cortazzo</li>
+                    <li><span>1934:</span> Teodoro V. Varela</li>
+                    <li><span>1935-1936:</span> Luis M. Ponzinibbio</li>
+                    <li><span>1937-1938:</span> Juan A. R. Escrigna</li>
+                    <li><span>1939-1940:</span> Claudio A. Anti</li>
+                    <li><span>1941-1943:</span> Adrián C. Escobar</li>
+                    <li><span>1944:</span> Luis M. Ponzinibbio</li>
+                    <li><span>1945:</span> Heriberto E. Pronello</li>
+                    <li><span>1946:</span> Carlos S. V. D'Angelo</li>
+                    <li><span>1947:</span> Luis M. Ponzinibbio</li>
+                    <li><span>1948:</span> Adolfo Boglione</li>
+                    <li><span>1949:</span> Luis M. Ponzinibbio</li>
+                    <li><span>1950:</span> Ernesto C. Marante</li>
+                    <li><span>1951-1952:</span> Luis M. Ponzinibbio</li>
+                    <li><span>1953:</span> Ernesto C. Marante</li>
+                    <li><span>1954:</span> Luis C. Tomasini</li>
+                    <li><span>1955-1957:</span> Luis M. Ponzinibbio</li>
+                    <li><span>1958:</span> Antonio T. Velo</li>
+                    <li><span>1959-1960:</span> Italo F. Boglione</li>
+                    <li><span>1961:</span> Pedro A. Orgambide</li>
+                    <li><span>1962:</span> Escribano A. Barattini</li>
+                    <li><span>1963-1965:</span> Luis M. Ponzinibbio</li>
+                    <li><span>1966-1967:</span> Antonio T. Velo</li>
+                    <li><span>1968-1969:</span> Escribano A. Barattini</li>
+                    <li><span>1970-1971:</span> Victor F. Vesco</li>
+                    <li><span>1972-1973:</span> Antonio T. Velo</li>
+                    <li><span>1974-1975:</span> Escribano A. Barattini</li>
+                    <li><span>1976-1977:</span> Federico A. Flynn</li>
+                    <li><span>1978-1979:</span> Manuel A. Vidal</li>
+                    <li><span>1980-1981:</span> Rodolfo C. N. Dantice</li>
+                    <li><span>1982-1983:</span> Escribano A. Barattini</li>
+                    <li><span>1984-1985:</span> Dr. Isidro R. Pujato</li>
+                    <li><span>1986-1987:</span> Dr. Virgilio J. Ferrazzini</li>
+                    <li><span>1988-1991:</span> Juan Á. Echeverria</li>
+                    <li><span>1992-1993:</span> Escribano A. Barattini</li>
+                    <li><span>1994-1997:</span> Dr. Ricardo F. Giusepponi</li>
+                    <li><span>1998-2016:</span> Dr. Mario D. Giammaria</li>
+                    <li><span>2017-Presente:</span> Sr. Mario D. Giammaria</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="modal-institucion" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2>Institución</h2>
+            <p>120 AÑOS CON LA MISMA PASIÓN
+
+                La Asociación Rosarina de Fútbol celebra 120 años de historia y son muchos los motivos para festejar.
+                Este 2025 nos encuentra atravesando un presente pujante, con cada vez más clubes, más equipos y más
+                deportistas participando en las decenas de torneos que año tras año ocupan el calendario deportivo de la
+                Casa Madre del Fútbol Campo, el Futsal y el Fútbol Playa rosarinos, pero también con más acciones
+                sociales solidarias y extradeportivas que refuerzan nuestro crecimiento estructural.
+
+                Actualmente nuestra querida Asociación ostenta cifras récords tanto en jugadores inscriptos como en
+                equipos participantes. Los números son elocuentes 90 clubes afiliados, 1600 equipos en competencia todas
+                las semanas y más de 60.000 niñas, niños, adolescentes, jóvenes y adultos inscriptos en nuestros
+                registros. Números sobresalientes que posicionan a la liga como la más importante de todo el interior
+                argentino.
+
+                El calendario deportivo anual de Rosarina está integrado por nada menos que 70 torneos, que van desde
+                infantiles hasta super veteranos en todas las disciplinas.
+
+                De los 1600 planteles que disputan los certámenes locales, 1200 pertenecen a fútbol campo y 400 a futsal
+                y futbol playa, siendo el futbol infantil donde se encuentra la mayor cantidad de conjuntos, con un
+                total de 600 entre femenino y masculino. Esta cifra también es una marca en sí misma, nunca antes hubo
+                tantos equipos desarrollándose en las infantiles locales.
+
+                El presente también indica que la Asociación Rosarina, gracias a la destacadísima participación de sus
+                selecciones, es campeona vigente de los torneos provinciales masculinos en las categorías Sub-13, Sub-14
+                y Sub-15, además de haber sido finalistas en la última edición de la Copa Santa Fe femenina. Logros que
+                reflejan dentro de la cancha los inmensos esfuerzos que se realizan fuera de ella para que cada
+                selectivo compita en las mejores condiciones posibles.
+
+                Pero no sólo en lo meramente deportivo se demuestra la pujanza de la liga. En estos últimos años se
+                realizaron diversas actividades en el ámbito de la ARF, como capacitaciones en fichajes y sistema COMET,
+                cursos de RCP y Primeros Auxilios, clínicas de futsal con grandes referentes del deporte, capacitaciones
+                en género, cursos arbitrales y otras tantas iniciativas, impulsadas desde su Comisión Directiva y sus
+                Consejos Auxiliares.
+
+                El Predio que la Asociación tiene en el Parque Héroes de Malvinas es otro motivo de alegría para toda la
+                familia futbolera rosarina. Además de convertirse, desde el año 2023, en la sede donde fin de semana
+                tras fin de semana se llevan a cabo las jornadas de juveniles femeninas, también se realizaron allí
+                eventos multitudinarios como fue el 1er Encuentro Provincial de Selecciones de Ligas Sub-12 de Fútbol
+                Femenino. Varias son las mejoras estructurales que se realizaron y se siguen realizando en el Predio
+                para la comodidad tanto de jugadores como de espectadores.
+
+                Todos estos logros institucionales y deportivos hablan por sí solos del crecimiento de la Asociación
+                Rosarina de Fútbol, de su destacado presente y de su proyección hacia un futuro prometedor, para el cual
+                se está trabajando día a día con la firme convicción de que las pequeñas y grandes acciones de hoy harán
+                la diferencia para un mañana mejor.</p>
+        </div>
+    </div>
+    <div id="modal-partido" class="modal-overlay">
+    </div>
+    <div id="modal-central" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Rosario Central</h2>
+            <p>A finales de 1880 un grupo de trabajadores del Ferrocarril Central Argentino se reunía con frecuencia
+                tras la jornada laboral, a practicar un rudimentario fútbol en los terrenos baldíos ubicados cerca del
+                nacimiento de la actual Avenida Alberdi, en la zona norte de Rosario.
+
+                En la víspera de la Navidad de 1889, cerca de setenta personas se congregaron en un desaparecido bar de
+                la Avenida Alberdi 23 bis con la intención de crear un club de fútbol. Fue entonces cuando un inglés
+                llamado Thomas Mutton, propuso formalmente la creación de aquel proyecto, sugiriendo para el mismo el
+                nombre de Central Argentine Railway Athletic Club.
+
+                Los asistentes dieron su aprobación, y eligieron como presidente de la institución al más vehemente de
+                los oradores: el escocés Colin Bain Calder. Era el nacimiento del primer antecedente de lo que luego, en
+                1903, sería Rosario Central. La particularidad del nuevo club era que sólo podían ser socios los
+                empleados del Ferrocarril.
+
+                No fue fácil al principio conseguir rivales para el nuevo equipo. Mulhall, integrante de la Comisión
+                Directiva, buscaba cada mañana en los muelles del Puerto de Rosario algún barco cuya tripulación
+                estuviese dispuesta a competir amistosamente con la escuadra rosarina. Finalmente, en 1890 un grupo de
+                marineros británicos aceptó la invitación, y en las inmediaciones de la que hoy es la bajada Sargento
+                Cabral, se jugó el primer encuentro del que se tiene registro, el cual finalizó empatado 1 a 1. El
+                equipo alistó a M. Barton; Postell y Camp; J. Muskett, J. Barton y King; McLean, T. Muskett, Green,
+                McIntock y Hooper. <br>Cambio de nombre
+
+                La fusión entre las líneas ferroviarias Buenos Aires y Central Argentino marcó en 1903 un hito en la
+                historia del club, ya que Rosario recibió una notable afluencia de operarios criollos. Estos, se sumaron
+                de inmediato a la práctica del fútbol y la cantidad de socios subió de 70 a 130.
+
+                En una Asamblea extraordinaria llevada a cabo ese año, Miguel Green -que era uno de los delanteros del
+                equipo- propuso que se le permitiera el ingreso como socio del club a todas aquellas personas que
+                quisieran serlo, perteneciesen o no a la empresa ferroviaria. Esto, no estaba contemplado en el
+                estatuto, lo cual generó discusiones y debates entre los participantes. Además, sugirió también
+                castellanizar el nombre de la entidad. Finalmente, ambas mociones fueron aprobadas y los estatutos se
+                modificaron. Así, se permitió el ingreso a la institución de todo ciudadano que -previo pago de una
+                cuota societaria mensual- quisiera. La idea de Green comenzó a dar sus frutos, ya que al poco tiempo de
+                aprobarse el cambio, el club comenzó a recibir como socios a una importante masa de obreros y
+                trabajadores, en general, provenientes de distintas zonas populares de la ciudad. Además, la institución
+                rosarina cambió de nombre al definitivo y actual en español: Club Atlético Rosario Central.</p>
+        </div>
+    </div>
+    <div id="modal-newells" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Newell's Old Boys</h2>
+            <p>El Club Atlético Newell’s Old Boys (coloquialmente conocido también como Ñuls, o Ñubel) es una
+                institución deportiva de la ciudad de Rosario, en la provincia de Santa Fe (Argentina). Al año 2025 se
+                desempeña en la Primera División de Argentina, su estadio alberga alrededor de 49000 mil personas
+
+                Fue fundado el 3 de noviembre de 1903; recibió su nombre en honor a Isaac Newell, institutor y director
+                del Colegio Comercial Anglo Argentino en 1884. Los fundadores fueron exalumnos de dicha institución,
+                entre ellos, Claudio Newell, hijo de Isaac.
+
+                En 1905, el club comenzó su actividad futbolística en la Liga Rosarina de Fútbol, mientras que entre
+                1931 y 1938 participó de los torneos profesionales de la Asociación Rosarina de Fútbol. A partir de 1939
+                se incorporó a la primera división, en el ámbito de la AFA (Asociación del Fútbol Argentino). Lleva 61
+                temporadas ininterrumpidas de Primera División, posicionándose tercero, luego de Vélez Sarsfield y Boca
+                Juniors.</p>
+        </div>
+    </div>
+    <div id="modal-central-cordoba" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Central Córdoba</h2>
+            <p>El Club Atlético Central Córdoba es un club de fútbol argentino, fundado el 20 de octubre de 1906.[6]​
+                Tiene su sede en la ciudad de Rosario perteneciente a la Provincia de Santa Fe.[7]​ Cabe destacar como
+                máximo éxito la Copa Beccar Varela de 1933, consagrándose como el primer campeón del interior del país
+                de una copa nacional en la era profesional de AFA (1931-presente). A partir de agosto de 2013 juega en
+                Primera C, cuarta división para los equipos directamente afiliados a la AFA.
+
+                Su estadio lleva el nombre de Gabino Sosa y tiene una capacidad de 17.025 personas.</p>
+        </div>
+    </div>
+    <div id="modal-tiro-federal" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Tiro Federal</h2>
+            <p>Tiro Federal Argentino fue fundado el 29 de marzo de 1905 en la ciudad de Rosario (Argentina) por un
+                grupo de aficionados al fútbol. Un obrero que trabajaba en los talleres del Ferrocarril Central
+                Argentino cedió gentilmente una habitación lindante a los stands del Tiro Federal Argentino a este grupo
+                de rosarinos y estos decidieron llamar al club con el mismo nombre que la institución de tiro.[5]​
+
+                El equipo albiceleste recién se incorporó a la Liga Rosarina de Fútbol a mediados de 1906, participó en
+                la segunda división (por entonces el Torneo Mayor) y finalizó segundo detrás de Argentino en la zona B.
+                Al año siguiente participó una vez más del torneo de segunda pese a que fue invitado a integrar el de
+                primera. Sus dirigentes creyeron que lo correcto era ganar ese privilegio en la cancha. Así fue como
+                obtuvo el ascenso en 1907 y en 1908 ya se tuteaba con Newell’s y Central, clubes que por entonces
+                empezaban a congregar la mayor cantidad de adeptos en Rosario.</p>
+        </div>
+    </div>
+    <div id="modal-adiur" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>ADIUR</h2>
+            <p>En el año 1979 un grupo de padres cuyos hijos jugaban en la Agrupación Deportiva Infantil Rosario
+                (A.D.I.R) se desprendieron de esa entidad, y decidieron fundar una institución similar, que se dedicase
+                primordialmente al fútbol infantil, y a la cual llamaron A.D.I.U.R. La modificación hecha al nombre fue
+                mínima: apenas le agregaron la palabra Unión. Los colores que eligieron fueron el naranja con vivos
+                negros, aunque años más tarde el anaranjado fue destiñéndose y mutando a un amarillo gastado y ambarino,
+                que hoy trocó nuevamente en anaranjado, volviendo a sus orígenes.
+
+                En sus primeros años de vida el club participó de la Liga ARDYTI. Entre las divisiones de baby fútbol
+                que se destacaron se puede mencionar a la categoría 72, que fue campeona en varias oportunidades, y que
+                llegó a defender a la Liga en campeonatos provinciales. Algunos de los que integraron ese equipo
+                llegaron, años más tarde, a militar en clubes profesionales de la Argentina y Chile.</p>
+        </div>
+    </div>
+    <div id="modal-morning" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Morning Star</h2>
+            <p>La historia de Morning Star nace allá por octubre de 1942. En casa de la familia Consiglio, ubicada en el
+                Pasaje Noruega (ex Bustinza) 3371, varios primos, entre ellos Gerónimo, Antonio y Salvador, decidieron
+                darle forma a un club de fútbol. Los muchachos barajaron muchos nombres y “Estrella del mañana” fue uno
+                de los que más gustó. Sin embargo, lo consideraron vulgar. Así que uno de ellos lo tradujo al inglés y
+                propuso “Morning Star”, denominación que impresionó a los demás y fue rápidamente adoptada.
+
+                Mediante una rifa pudieron solventar los costos de las camisetas, que fueron verdes con puños, cuello y
+                una estrella en el pecho de color blanco. Las familias numerosas eran muy comunes en esa época y entre
+                hermanos, primos y algún que otro vecino, no era difícil armar un equipo. En el año 44 se empezaron a
+                organizar los torneos de Baby Fútbol en nuestra ciudad. Se hacían en la cancha de básquet del Club
+                Echesortu y en la plaza de Cafferata y San Luis. Morning participó con dos equipos (que eran conducidos
+                por Domingo Fiorino y Salvador Consiglio), y ambos cumplieron un buen desempeño.</p>
+        </div>
+    </div>
+    <div id="modal-tiro-suizo" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Tiro Suizo</h2>
+            <p>A mediados de septiembre del año 1889 un grupo de ciudadanos miembros de la colectividad Helvética –del
+                Cantón Ticino– se decidió a formar una institución suiza de tiro, a la que denominarían Tiro Suizo Unión
+                Liberal Ticinense de Rosario. Emilio Canova, Alejandro Máspoli y Carlos Barrioni fueron tres de sus
+                fundadores.
+
+                El polígono para ejercicio de tiro al blanco tenía por finalidad proseguir en esta tierra con las viejas
+                costumbres de la añorada patria europea, y fomentar entre los ciudadanos nativos dicha práctica. Esas
+                primeras instalaciones estaban ubicadas en las afueras de la ciudad, sobre las barrancas del Paraná, en
+                las inmediaciones del entonces denominado Puerto del Saladillo, y sobre terrenos donados por el Sr.
+                Manuel Arijón en abril de 1890.
+
+                El 1º de agosto de 1891 se celebró en el stand el “VI Centenario de la Independencia Suiza”, mientras
+                que el 3 de septiembre de 1894 se le dio su actual nombre: Sociedad Tiro Suizo Rosario. Por entonces,
+                también se adquirió un terreno de 40.000 metros cuadrados en la prolongación de la calle San Martín
+                camino al Saladillo.</p>
+        </div>
+    </div>
+    <div id="modal-aguirre" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Coronel Aguirre</h2>
+            <p>La historia de Coronel Aguirre nace de la fusión de dos clubes. El 10 de octubre de 1924 fue fundado el
+                Club Atlético Gobernador Gálvez, el cual se identificó con los colores rojo y verde en atribución a los
+                banderines señalizadores de la estación ferroviaria. Posteriormente se fundó en la ciudad un nuevo club,
+                al cual se denominó Coronel Aguirre.
+
+                El 14 de diciembre de 1945 se reunieron socios, simpatizantes y autoridades de ambas instituciones. El
+                Dr. Fernando Filippini era el presidente del C. A. Gobernador Gálvez y el Sr. Juan Facchetti del C. A.
+                Coronel Aguirre. Filippini dio inicio a la Asamblea exponiendo las dificultades económicas por las que
+                atravesaba su club, y propuso posteriormente unir a ambas entidades. Así fue que se dio curso al
+                proyecto y ambos clubes sumaron sus activos: Aguirre aportó sus terrenos y sus instalaciones, y Gálvez
+                el escaso patrimonio con el que contaba: un alambrado tejido de 150 metros de largo por un metro ochenta
+                de alto. Una vitrina con 32 copas y dos banderines.
+
+                El nuevo club adoptó el nombre de Coronel Aguirre, y los colores rojo y verde de Gobernador Gálvez. Juan
+                Facchetti asumió como Presidente. A él lo acompañaron, como Secretario y Tesorero respectivamente, los
+                señores Marino Bruno y Mario Realini. Rápidamente se obtuvo la Personería Jurídica y el predio donde se
+                encuentra emplazado actualmente su campo de deportes.</p>
+        </div>
+    </div>
+    <div id="modal-banco" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Club Banco Nación</h2>
+            <p>Con dos objetivos fundamentales como son la promoción del deporte y la formación integral de las personas
+                que concurran a practicarlo, B.A.N.C.O, viene a sustituir al antiguo Club Banco Nación de Rosario,
+                fundado el 10 de mayo de 1949 y reafiliado a los torneos de la Asociación Rosarina de Fútbol en el año
+                1998.
+
+                Banco Nación, sin embargo, ya había participado durante 25 años en nuestra Liga. Luego, y gracias a un
+                permiso especial otorgado por la ARF, intervino en la Liga Sanlorencina. Allí obtuvo numerosos
+                campeonatos en todas las categorías a lo largo de 20 años y finalmente, debido a situaciones anómalas
+                suscitadas en dicha Liga, el club decidió reafiliarse a Rosarina.
+
+                En la Asamblea del 24 de junio de 1999 se tomó la decisión de constituir una Asociación Civil que
+                funcionara con personería jurídica con el propósito de dividir la parte de fútbol y funcionar en forma
+                independiente del club. El día 20 de octubre de ese año se obtuvo la personería jurídica definitiva, y a
+                partir del primero de enero de 2000, la entidad participaría en nuestra Asociación bajo su nueva
+                denominación. Barrio Alberdi Nuevo Centro Organizativo, o como lo conocerían todos desde entonces:
+                B.A.N.C.O.</p>
+        </div>
+    </div>
+    <div id="modal-galvez" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Club Gálvez</h2>
+            <p>El Centro Cultural Atlético y Deportivo Villa Gobernador Gálvez tiene una historia muy particular. Surge
+                a partir de un desprendimiento del pasado Centro Cultural y Deportivo del Personal del Frigorífico
+                Paladini. Tal institución disputaba los partidos del torneo Inter-Industrial. Luego la Liga de la
+                Facultad. En 1991 es invitado a participar de la Divisional “B” de la Asociación Rosarina de Fútbol
+                donde asciende a la división “A”. Posteriormente Paladini obtiene el Torneo Gobernador Molinas, año
+                1994, junto a otros títulos en categorías inferiores. Fue una histórica conquista, que tomó aún mayor
+                dimensión después de que en 1997 uno de los directores del frigorífico tomara la decisión unilateral de
+                desafiliarse de la ARF.
+
+                Es decir, el club tenía la posibilidad de seguir funcionando, pero ya no podía continuar federado. Para
+                peor, todo ocurrió en forma sorpresiva. De modo que las autoridades de la institución, optaron por
+                hacerse cargo del compromiso que tenían con los jugadores (algo más de 250 chicos). La mayoría no
+                pertenecía al frigorífico sino que eran hijos y nietos de trabajadores de Paladini. También había
+                quienes se acercaban al club porque observaban el crecimiento paulatino del establecimiento deportivo.
+                La idea de la Comisión Directiva fue siempre preservar la afiliación en Rosarina, y la categoría “A”,
+                que se estaba manteniendo con algunos altibajos.</p>
+        </div>
+    </div>
+    <div id="modal-pablo-vi" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Pablo VI</h2>
+            <p>Pablo VI es una de las instituciones más tradicionales en lo que respecta a fútbol infantil de nuestra
+                ciudad. Nace bajo la denominación Agrupación Rosario Central, y su primera casa fue el predio de Crespo
+                al 1600 (lindante con Avenida Pellegrini). En 1963 la señora De Palmieri dona los terrenos al
+                Arzobispado “para la práctica deportiva y el entretenimiento”, y desde entonces surge el Ateneo Juvenil
+                Paulo VI. El nombre podía ser mencionado de ese modo, pero también podía llamársele Pablo VI, bajo
+                estricta autorización de la Santa Sede, aunque al conseguir la personería jurídica en el año 90 se
+                presentaría definitivamente con ésta última denominación.
+
+                El fútbol infantil en los comienzos de la institución llegó a agrupar a más de 1.200 chicos y se
+                realizaban concurridísimos torneos internos. Otro dato significativo es que de sendos desprendimientos
+                de Pablo VI surgen los clubes Juan XXIII y El Torito. En 1979 la Comisión Directiva a cargo del Sr.
+                Farina, decidió que ya era tiempo de participar en alguna de las Ligas por entonces existentes. Ese
+                mismo año Pablo VI ingresa en A.R.F.I (Asociación Rosarina de Fútbol Infantil) y al poco tiempo en la
+                A.R.F, en la cual estaría con exclusividad a partir del año 83.</p>
+        </div>
+    </div>
+    <div id="modal-provincial" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Provincial</h2>
+            <p>El Club Atlético Provincial surgió a partir de un grupo de jóvenes, amantes del fútbol, que habían
+                formado un equipo dispuesto a competir con sus similares del barrio. Los muchachos denominaron al
+                conjunto “San Martín” y a partir de entonces jugaron unos cuantos partidos en forma esporádica e
+                informal. El grupo se reunía habitualmente en la barbería de un tal Risso Patrón, ubicada en las
+                inmediaciones del mercado Modelo de Boulevar Santafesino (hoy Oroño) y Jujuy.
+
+                Allí los muchachos del San Martín (algunos eran empleados del Mercado, otros bancarios y ferroviarios),
+                recalaban cada día contando anécdotas y hazañas del Atlético del Rosario y Rosario Central. Uno de los
+                parroquianos de la barbería era don Juan Cechi, alto funcionario del Banco Español, que había estimulado
+                a los muchachos del Albión para que fundaran ese club. Pronto se fueron sumando colaboradores de
+                voluntad inquebrantable y moral intachable: Lehmann, Navarini, Egüiazú, Hiriart, Uranga, Cordón, Doyle,
+                Flaherty y Alvarez. El entusiasmo que don Juan advirtió en este nuevo grupo le llevó a considerar
+                seriamente la posibilidad de fundar una institución bajo su tutela personal. La idea fue plasmada el 25
+                de mayo de 1903.</p>
+        </div>
+    </div>
+    <div id="modal-alianza" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Alianza Sport</h2>
+            <p>Agrega aquí la información de Alianza Sport...</p>
+        </div>
+    </div>
+    <div id="modal-san-telmo" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>San Telmo Funes</h2>
+            <p>El Club Atlético San Telmo se fundó el 7 de Octubre de 1943. Está ubicado en pleno corazón del barrio San
+                Telmo de la ciudad de Funes, en la tradicional esquina de General Paz y Juan Elorza. Los colores que
+                desde siempre representaron a esta entidad son el rojo y el blanco, los cuales fueron fieles testigos de
+                las victorias obtenidas por varias generaciones de vecinos en competencias varias y amistosos de todo
+                tipo.
+
+                En la actualidad San Telmo cuenta con una gran cantidad de niños, jóvenes y adultos que lo representan
+                con alma y corazón en las distintas actividades que se ofrecen a los asociados: Fútbol Infantil y
+                Juvenil; Básquet Infantil y Juvenil; Patín Artístico y Competitivo; Patín de Presición; Gimnasia
+                Deportiva; Gimnasia Artística; Gimnasia para señoras; Danzas Clásicas; Tae Kwon Do; Natación; y Bochas.
+
+                En todas y cada una de estas actividades hay una numerosa cantidad de alumnos, que con excelente nivel,
+                participan de las distintas Ligas o Asociaciones en las que están federados. Así también, un nutrido
+                grupo de profesores es el que se encarga de dictar con suma dedicación las clases específicas de cada
+                actividad</p>
+        </div>
+    </div>
+    <div id="modal-union-alvarez" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Unión y Sociedad Italiana</h2>
+            <p>Allá por el año 1911 ya se jugaba al fútbol en la localidad de Álvarez. Muchas eran las agrupaciones, que
+                practicaban aquel extraño deporte llegado desde el otro lado del mundo. El potrero, campito o baldío,
+                era el lugar elegido para despuntar ese “vicio” que poco a poco iba prendiendo entre los jóvenes del
+                pueblo y la zona.
+
+                Dos de esos equipos eran los que más se destacaban: Athletic y Kimberley, nombres como se ve
+                eminentemente ingleses. Ambos decidieron unirse diez años después, dado que el pueblo por entonces no
+                daba para tener dos representativos. Es así como el 1 de mayo de 1921, fue fundado el Club Atlético
+                Unión. Su afán deportivo rápidamente fue volcado al fútbol, amateur por supuesto, y los colores elegidos
+                para la camiseta fueron el rojo y el negro dispuestos a rayas verticales, imitando la divisa del Milan
+                de Italia.
+
+                Desde entonces intervinieron en torneos zonales y su primera cancha se ubicó en un terrero prestado por
+                “Pin” Carnelli, fervoroso hincha de Unión, en la intersección de lo que hoy es la Avenida San Martín y
+                la calle Güemes. El 6 de noviembre de 1957, se concretó la fusión con la Sociedad Italiana y Recreativa
+                “Victorio Emanuelle III” y por sugerencia del asociado Juan Carlos Giacomelli, la entidad tomó el nombre
+                definitivo de CLUB ATLÉTICO UNION Y SOCIEDAD ITALIANA, recibiendo el 27 de junio de 1958 la personería
+                jurídica, por decreto ley 2215 del gobierno de la Provincia de Santa Fe.</p>
+        </div>
+    </div>
+    <div id="modal-oriental" class="modal-overlay">
+        <div class="modal-content"><button class="close-button">&times;</button>
+            <h2>Oriental</h2>
+            <p>El Club Infantil Oriental desde el momento mismo de su fundación ha sido punto de encuentro ineludible
+                para los vecinos de zona sur. Emplazado en el corazón de dicha barriada, los aurinegros han sabido
+                convertirse en destacados animadores de los campeonatos de la Asociación Rosarina de Fútbol.
+
+                La historia de Oriental dice que Luis Hasen fundó “La Criolla”, un humilde equipo mediante el cual pudo
+                conocer a Edmundo Flores, el por entonces técnico de Arijón. Ambos entablaron una buena amistad y
+                decidieron fusionar sus planteles antes de emprender un viaje juntos a la República Oriental del
+                Uruguay. Allá los esperaba un apretado itinerario de partidos amistosos. A su regreso, los chicos
+                decidieron llamar a esta unión de clubes Oriental, en agradecimiento a la cordialidad y afecto que
+                habían recibido en el país vecino. Además, adoptaron los colores amarillo y negro por Peñarol de
+                Montevideo.
+
+                A comienzos de la década del 70 participaron también de los Campeonatos “Evita”, donde por dos años
+                consecutivos obtuvieron el título del Departamento Rosario. Finalmente, la entidad ingresó a la
+                Asociación Rosarina de Fútbol en el año 81, hecho fundamental que lo obligó a dar un salto de calidad y
+                representó, en su momento, un enorme desafío para el club, ya que a partir de ahí comenzó a competir con
+                los “grandes” del fútbol de nuestra ciudad.</p>
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
