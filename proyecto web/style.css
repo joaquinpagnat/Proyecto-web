@@ -538,3 +538,8 @@ body.dark-mode .dark-mode-button .sun {
     display: none;
   }
 }
+
+#publicidad a {
+  display: flex;
+  justify-content: center;
+}
